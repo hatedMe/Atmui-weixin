@@ -17,10 +17,10 @@ export default {
       'pages/logs/main', '^pages/index/main'
     ],
     window: {
-      backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
-      navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      backgroundTextStyle: 'center',
+      navigationBarBackgroundColor: '#00c694',
+      navigationBarTitleText: '小小二师兄',
+      navigationBarTextStyle: 'white'
     }
   }
 }
