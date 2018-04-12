@@ -7,7 +7,11 @@
 </template>
 
 <script>
+    import Icon from '../Icon/Icon';
     export default {
+        components: {
+          Icon,  
+        },
         name: 'Button',
         props:{
             type:{

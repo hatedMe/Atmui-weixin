@@ -4,7 +4,7 @@
         <div class="content-block-title" @click="clickHandle">基础组件</div>
         <div class="list">
             <ul>
-                <ListItem href="/button" licon="icon-remind" subtitle="6">Button按钮组件</ListItem>
+                <ListItem href="/pages/button/main" licon="icon-remind" subtitle="6">Button按钮组件</ListItem>
                 <ListItem href="/tab" licon="icon-integral" subtitle="小组件">Tab组件</ListItem>
                 <ListItem licon="icon-manage" subtitle="可定制">Icon图标组件</ListItem>
                 <ListItem href="/list" licon="icon-other" subtitle="7">List列表组件</ListItem>
@@ -16,29 +16,38 @@
         <div class="content-block-title">视觉规范</div>
         <div class="list">
             <ul>
-                <ListItem href="/button" licon="icon-remind" subtitle="6">Button按钮组件</ListItem>
+                <!-- <ListItem href="/button" licon="icon-remind" subtitle="6">Button按钮组件</ListItem>
                 <ListItem href="/tab" licon="icon-integral" subtitle="小组件">Tab组件</ListItem>
                 <ListItem licon="icon-manage" subtitle="可定制">Icon图标组件</ListItem>
                 <ListItem href="/list" licon="icon-other" subtitle="7">List列表组件</ListItem>
                 <ListItem licon="icon-send" subtitle="8">Input表单组件</ListItem>
-                <ListItem href="/switch" licon="icon-send" subtitle="多样化">Switch组件</ListItem>
+                <ListItem href="/switch" licon="icon-send" subtitle="多样化">Switch组件</ListItem> -->
+
+                <!-- <ListItem href="/swipeout" licon="icon-flip">滑动删除</ListItem>
+                <ListItem href="/map" licon="icon-coordinates">腾讯地图</ListItem> -->
+                <ListItem href="/form" subtitle="可定制" licon="icon-message">Form组件系列</ListItem>
+                <!-- <ListItem href="/search" licon="icon-search">SearchBar搜索栏</ListItem>
+                <ListItem href="/searchhistory" licon="icon-search">Search搜索历史列表</ListItem>
+                <ListItem href="/upload" licon="icon-picture">Upload文件上传</ListItem>
+                <ListItem href="/picker" licon="icon-flip">Picker选择</ListItem>
+                <ListItem href="/uprefresh" licon="icon-flip">上拉刷新</ListItem> -->
             </ul>
         </div>
     </scroll-view>
     <nav class="bartab">
-        <a class="bar-tab-item active">
+        <!-- <a class="bar-tab-item active">
             <Icon type="icon-remind" size="28" />
             <span class="tab-label">基础</span>
-        </a>
-        <a class="bar-tab-item">
+        </a> -->
+        <a class="bar-tab-item active">
             <Icon type="icon-integral" size="28" />
             <span class="tab-label">组件</span>
         </a>
         <a class="bar-tab-item">
             <Icon type="icon-document" size="28" />
-            <span class="tab-label">示例</span>
+            <span class="tab-label">规范</span>
         </a>
-        <a class="bar-tab-item">
+        <a class="bar-tab-item" href="/pages/about/main">
             <Icon type="icon-accessory" size="28" />
             <span class="tab-label">关于</span>
         </a>
@@ -65,8 +74,7 @@ export default {
             motto: 'Hello World',
             userInfo: {},
             mainTitle: 'text',
-            subtitle: 'miniText',
-            list: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 5]
+            subtitle: 'miniText'
         }
     },
     methods: {
