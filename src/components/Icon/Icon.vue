@@ -14,7 +14,7 @@
             },
             size: {
                 type: String,
-                default: '16'
+                default: '24'
             }
         },
         methods: {

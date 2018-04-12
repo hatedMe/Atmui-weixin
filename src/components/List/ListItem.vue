@@ -2,33 +2,37 @@
 
 <template>
     <li class="list-item" @click="clickHandle">
-        <div v-if="!to" class="list-item-inner">
+        <div v-if="!href" class="list-item-inner">
             <p class="list-main-title">
                 <Icon v-if="licon" :type="licon" size="24" />
-                <slot>{{ mainTitle }}</slot>
+                <span> <slot>{{ mainTitle }}</slot> </span>
             </p>
             <p class="list-item-after">
                 <span v-if="subtitle">{{ subtitle }}</span>
-                <Icon type="icon-enter" size="20" />
+                <Icon type="icon-enter" size="24" />
             </p>
         </div>
-        <router-link v-else :to="to" class="list-item-inner">
+        <a v-else :href="href" class="list-item-inner">
             <p class="list-main-title">
                 <Icon v-if="licon" :type="licon" size="24" />
-                <slot>{{ mainTitle }}</slot>
+                <span> <slot>{{ mainTitle }}</slot> </span>
             </p>
             <p class="list-item-after">
                 <span v-if="subtitle">{{ subtitle }}</span>
-                <Icon type="icon-enter" size="20" />
+                <Icon type="icon-enter" size="24" />
             </p>
-        </router-link>
+        </a>
     </li>
 </template>
 
 
 <script>
+    import Icon from '../components/Icon/Icon.vue';
     export default {
         name: 'ListItem',
+        components: {
+            Icon ,
+        },
         props: {
             mainTitle: {
                 type: String,
@@ -42,7 +46,7 @@
                 type: String,
                 default: ''
             },
-            to:{
+            href:{
                 type: String,
                 default: ''
             }
