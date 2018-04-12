@@ -5,9 +5,9 @@ import './components/atomui.less';
 
 
 
-//import Atmui from './util/index.js'; // util
+// import Atmui from './util/index.js'; // util
 
-// 全局 方法
+// // 全局 方法
 // import Alert from './components/Alert/index.js';
 // import Loading from './components/Loading/index.js';
 // import Picker from './components/Picker/Picker.js';
@@ -17,10 +17,10 @@ import './components/atomui.less';
 import Button from './components/Button/button.vue';
 
 // 图标
-import Icon from './components/Icon/Icon.vue';
+// import Icon from './components/Icon/Icon.vue';
 
 // // 表单
-//import Input from './components/Input/Input.vue';
+// import Input from './components/Input/Input.vue';
 
 // // 底部barTab 
 // import BarTab from './components/BarTab/BarTab.vue';
@@ -65,42 +65,15 @@ import Icon from './components/Icon/Icon.vue';
 
 // //下拉刷新，上拉加载
 // import Uprefresh from './components/Uprefresh/Uprefresh.vue';
+// import Swipeout from './components/Swipeout/swipeout.vue';
+// import SwipeoutItem from './components/Swipeout/swipeoutItem.vue';
+// import SwipeoutButton from './components/Swipeout/swipeButton.vue';
 
-// // 自定义指令 
-// import tap from './directive/v-tap.js';
-// import focus from './directive/v-focus.js';
 
 
 const atomui = {
     Button,
-    Icon
-}
-
-
-const install = function(Vue) {
-
-    Object.keys(atomui).forEach(key => {
-        Vue.component(key, atomui[key])
-    })
-
-    // Vue.prototype.$Atmui = Atmui;
-
-    // Vue.prototype.$Alert = Alert;
-    // Vue.prototype.$Loading = Loading;
-    // Vue.prototype.$Swiper = Swiper;
-    // Vue.prototype.$Picker = Picker;
-
-}
-
-
-
-export default Object.assign({}, atomui, { install })
-
-
-
-export {
-    Button,
-    Icon,
+    // Icon,
     // Input,
 
     // BarTab,
@@ -128,7 +101,69 @@ export {
 
     // Upload,
 
-    // Uprefresh
+    // Uprefresh,
+
+    // Swipeout,
+    // SwipeoutItem,
+    // SwipeoutButton
+}
+
+
+const install = function(Vue) {
+
+    Object.keys(atomui).forEach(key => {
+        Vue.component(key, atomui[key])
+    })
+
+    // Vue.prototype.$Atmui = Atmui;
+    // Vue.prototype.$Alert = Alert;
+    // Vue.prototype.$Loading = Loading;
+    // Vue.prototype.$Swiper = Swiper;
+    // Vue.prototype.$Picker = Picker;
+
+}
+
+
+
+export default Object.assign({}, atomui, { install })
+
+
+
+export {
+    Button,
+    // Icon,
+    // Input,
+
+    // BarTab,
+    // BarTabItem,
+
+    // Tab,
+    // TabItem,
+
+    // Lists,
+    // ListItem,
+
+    // Calendar,
+
+    // Switchs,
+
+    // Silder,
+    // SilderItem,
+
+    // InputBox,
+    // inputItem,
+
+    // SearchBar,
+    // SearchHistory,
+    // SearchHistoryItem,
+
+    // Upload,
+
+    // Uprefresh,
+
+    // Swipeout,
+    // SwipeoutItem,
+    // SwipeoutButton
 }
 
 

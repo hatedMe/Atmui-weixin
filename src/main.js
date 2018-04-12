@@ -7,7 +7,12 @@ App.mpType = 'app'
 const app = new Vue(App)
 app.$mount()
 
-import './Atmui/components/atomui.less';
+
+// import Atmui from './components/index.js';
+
+// Vue.use( Atmui )
+
+// import './Atmui/components/atomui.less';
 
 export default {
   // 这个字段走 app.json

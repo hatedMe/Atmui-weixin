@@ -1,36 +1,36 @@
 <template>
-    <div>
-        <div class="list">
-    <ul>
-        <li class="list-item">
-            <a class="list-item-inner" href="/pages/color/main">
-                <p class="list-main-title">
-                    <Icon type="icon-remind" size="24" />
-                    <span>Button按钮</span>
-                </p>
-                <p class="list-item-after">
-                    <span>小标题</span>
-                    <Icon type="icon-enter" size="20" />
-                </p>
-            </a>
-        </li>
-        <li class="list-item">
-            <a class="list-item-inner">
-                <p class="list-main-title">
-                    <Icon type="icon-integral" size="24" />
-                    <span>{{ mainTitle }}</span>
-                </p>
-                <p class="list-item-after">
-                    <span>{{ subtitle }}</span>
-                    <Icon type="icon-enter" size="20" />
-                </p>
-            </a>
-        </li>
-    </ul>
-    
-</div>
+<div>
+    <div class="list">
+        <!-- <ul>
+            <li class="list-item">
+                <a class="list-item-inner" href="/pages/color/main">
+                    <p class="list-main-title">
+                        <Icon type="icon-remind" size="24" />
+                        <span>Button按钮</span>
+                    </p>
+                    <p class="list-item-after">
+                        <span>小标题</span>
+                        <Icon type="icon-enter" size="20" />
+                    </p>
+                </a>
+            </li>
+            <li class="list-item">
+                <a class="list-item-inner">
+                    <p class="list-main-title">
+                        <Icon type="icon-integral" size="24" />
+                        <span>{{ mainTitle }}</span>
+                    </p>
+                    <p class="list-item-after">
+                        <span>{{ subtitle }}</span>
+                        <Icon type="icon-enter" size="20" />
+                    </p>
+                </a>
+            </li>
+        </ul> -->
+        456
+    </div>
 
-    <nav class="bartab">
+    <!-- <nav class="bartab">
         <a class="bar-tab-item">
             <Icon type="icon-remind" size="28" />
             <span class="tab-label">基础</span>
@@ -47,26 +47,23 @@
             <Icon type="icon-accessory" size="28" />
             <span class="tab-label">关于</span>
         </a>
-    </nav>
+    </nav> -->
 
-    </div>
+</div>
 </template>
 
 <script>
-
-import Icon from '../../Atmui/components/Icon/Icon.vue';
+// import Lists from '../../Atmui/components/List/List.vue';
+// import Icon from '../../Atmui/components/Icon/Icon.vue';
 
 export default {
     data() {
         return {
             motto: 'Hello World',
             userInfo: {},
-            mainTitle : 'text',
-            subtitle : 'miniText'
+            mainTitle: 'text',
+            subtitle: 'miniText'
         }
-    },
-    components: {
-        Icon
     },
     mounted() {
         console.log(456);
