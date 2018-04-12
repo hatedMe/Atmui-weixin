@@ -7,7 +7,7 @@
                 <ListItem href="/pages/button/main" licon="icon-remind" subtitle="6">Button按钮组件</ListItem>
                 <ListItem href="/tab" licon="icon-integral" subtitle="小组件">Tab组件</ListItem>
                 <ListItem licon="icon-manage" subtitle="可定制">Icon图标组件</ListItem>
-                <ListItem href="/list" licon="icon-other" subtitle="7">List列表组件</ListItem>
+                <ListItem href="/pages/list/main" licon="icon-other" subtitle="7">List列表组件</ListItem>
                 <ListItem licon="icon-send" subtitle="8">Input表单组件</ListItem>
                 <ListItem href="/switch" licon="icon-send" subtitle="多样化">Switch组件</ListItem>
             </ul>
@@ -25,7 +25,7 @@
 
                 <!-- <ListItem href="/swipeout" licon="icon-flip">滑动删除</ListItem>
                 <ListItem href="/map" licon="icon-coordinates">腾讯地图</ListItem> -->
-                <ListItem href="/form" subtitle="可定制" licon="icon-message">Form组件系列</ListItem>
+                <ListItem href="/pages/form/main" subtitle="可定制" licon="icon-message">Form组件系列</ListItem>
                 <!-- <ListItem href="/search" licon="icon-search">SearchBar搜索栏</ListItem>
                 <ListItem href="/searchhistory" licon="icon-search">Search搜索历史列表</ListItem>
                 <ListItem href="/upload" licon="icon-picture">Upload文件上传</ListItem>

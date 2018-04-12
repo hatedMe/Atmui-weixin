@@ -14,8 +14,12 @@
 
 
 <script>
+    import Icon from '../../components/Icon/Icon.vue';
     export default {
         name: 'inputItem',
+        components: {
+            Icon ,  
+        },
         computed: {
             type() {
                 return this.licon === '' && typeof this.licon !== 'undefined' ? 'icon-enter' : this.licon
