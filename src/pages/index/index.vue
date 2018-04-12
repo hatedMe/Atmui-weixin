@@ -30,7 +30,9 @@
         456
     </div>
 
-    <!-- <nav class="bartab">
+    <Button long >按钮</Button>
+
+    <nav class="bartab">
         <a class="bar-tab-item">
             <Icon type="icon-remind" size="28" />
             <span class="tab-label">基础</span>
@@ -47,16 +49,20 @@
             <Icon type="icon-accessory" size="28" />
             <span class="tab-label">关于</span>
         </a>
-    </nav> -->
+    </nav>
 
 </div>
 </template>
 
 <script>
-// import Lists from '../../Atmui/components/List/List.vue';
-// import Icon from '../../Atmui/components/Icon/Icon.vue';
+import Icon from '@/components/Icon/Icon.vue';
+import Button from '@/components/Button/Button.vue';
 
 export default {
+    components: {
+        Icon,
+        Button
+    },
     data() {
         return {
             motto: 'Hello World',
@@ -72,7 +78,5 @@ export default {
 </script>
 
 <style>
-p {
-    font-size: 20px;
-}
+
 </style>

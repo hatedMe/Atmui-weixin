@@ -8,11 +8,8 @@ const app = new Vue(App)
 app.$mount()
 
 
-// import Atmui from './components/index.js';
+import './components/atmui.less';  // 全局样式
 
-// Vue.use( Atmui )
-
-// import './Atmui/components/atomui.less';
 
 export default {
   // 这个字段走 app.json

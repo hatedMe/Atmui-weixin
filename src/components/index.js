@@ -1,5 +1,5 @@
 // 全局 less
-import './components/atomui.less';
+// import './components/atomui.less';
 
 
 
@@ -17,7 +17,7 @@ import './components/atomui.less';
 import Button from './components/Button/button.vue';
 
 // 图标
-// import Icon from './components/Icon/Icon.vue';
+import Icon from './components/Icon/Icon.vue';
 
 // // 表单
 // import Input from './components/Input/Input.vue';
@@ -73,7 +73,7 @@ import Button from './components/Button/button.vue';
 
 const atomui = {
     Button,
-    // Icon,
+    Icon,
     // Input,
 
     // BarTab,
@@ -131,7 +131,7 @@ export default Object.assign({}, atomui, { install })
 
 export {
     Button,
-    // Icon,
+    Icon,
     // Input,
 
     // BarTab,
