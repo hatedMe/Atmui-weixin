@@ -62,6 +62,8 @@ import ListItem from "@/components/List/ListItem.vue";
 import Icon from '@/components/Icon/Icon.vue';
 import Button from '@/components/Button/Button.vue';
 
+import request from '../../request/request.js';
+
 export default {
     components: {
         Icon,
@@ -83,15 +85,20 @@ export default {
         }  
     },
     mounted() {
-        // wx.showActionSheet({
-        //     itemList: ['A', 'B', 'C'],
-        //     success: function(res) {
-        //         console.log(res.tapIndex)
-        //     },
-        //     fail: function(res) {
-        //         console.log(res.errMsg)
-        //     }
-        // })
+
+        request.defaults.timeout = 1000;
+
+        request('https://github.com',{
+            props:{
+                item :45
+            }
+        }).then(res =>{
+            console.log( res );
+        }).catch(err =>{
+            console.log(err);
+        })
+        
+        // console.log( request.defaults );
     }
 }
 </script>
