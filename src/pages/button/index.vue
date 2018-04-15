@@ -17,15 +17,16 @@
     <Button type="submit" long>submit</Button>
     <Button type="info" long>info</Button>
     <Button type="cancel" long>cancel</Button>
-
+<!--
     <p>带图标</p>
+    
     <Button type="primary" licon="icon-homepage">primary</Button>
     <Button type="success" licon="icon-like"> success </Button>
     <Button type="warn" licon="icon-setup"> warn </Button>
     <Button type="submit" licon="icon-collection">submit</Button>
     <Button type="info" liocn="icon-prompt">info</Button>
     <Button type="cancel" licon="icon-delete">cancel</Button>
-
+-->
     <p>线框按钮</p>
 
     <Button type="primary" outline>primary</Button>

@@ -88,11 +88,13 @@ export default {
 
         request.defaults.timeout = 1000;
 
-        request('https://github.com',{
-            props:{
-                item :45
-            }
-        }).then(res =>{
+        // request('https://github.com').then(res =>{
+        //     console.log( res );
+        // }).catch(err =>{
+        //     console.log(err);
+        // })
+
+        request.head('https://github.com').then(res =>{
             console.log( res );
         }).catch(err =>{
             console.log(err);
