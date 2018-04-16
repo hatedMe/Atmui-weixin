@@ -94,7 +94,7 @@ export default {
         //     console.log(err);
         // })
 
-        request.head('https://github.com').then(res =>{
+        request.get('https://api.github.com/s').then(res =>{
             console.log( res );
         }).catch(err =>{
             console.log(err);
