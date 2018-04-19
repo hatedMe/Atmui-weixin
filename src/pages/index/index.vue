@@ -62,7 +62,7 @@ import ListItem from "@/components/List/ListItem.vue";
 import Icon from '@/components/Icon/Icon.vue';
 import Button from '@/components/Button/Button.vue';
 
-import request from '../../request/request.js';
+import wxRequest from 'wechat-request';
 
 export default {
     components: {
@@ -86,19 +86,23 @@ export default {
     },
     mounted() {
 
-        request.defaults.timeout = 1000;
 
-        // request('https://github.com').then(res =>{
-        //     console.log( res );
-        // }).catch(err =>{
-        //     console.log(err);
-        // })
+        console.log( wxRequest )
 
-        request.get('https://api.github.com/s').then(res =>{
+        // console.log( eval('var i = 4')  );
+        // request.defaults.timeout = 1000;
+
+        wxRequest('https://api.github.com').then(res =>{
             console.log( res );
         }).catch(err =>{
             console.log(err);
         })
+
+        // request.get('https://api.github.com/s').then(res =>{
+        //     console.log( res );
+        // }).catch(err =>{
+        //     console.log(err);
+        // })
         
         // console.log( request.defaults );
     }
