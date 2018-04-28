@@ -61,8 +61,7 @@ import ListItem from "@/components/List/ListItem.vue";
 
 import Icon from '@/components/Icon/Icon.vue';
 import Button from '@/components/Button/Button.vue';
-
-import wxRequest from '../../request/index.js';
+import wxRequest from 'wechat-request';
 
 export default {
     components: {
@@ -87,26 +86,23 @@ export default {
     mounted() {
 
 
-        // console.log( wxRequest )
+        wxRequest.defaults.timeout = 1500;
+        wxRequest.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
-        // console.log( eval('var i = 4')  );
-        // request.defaults.timeout = 1000;
-
-        // wxRequest('https://api.github.com').then(res =>{
-        //     console.log( res );
-        // }).catch(err =>{
-        //     console.log(err);
-        // })
-        // wxRequest.defaults.headers.get['Content-Type'] = 'application/json'
-        wxRequest.get('https://api.github.com',{
-            
-        }).then(res =>{
-            console.log( res );
+        wxRequest.post('http://localhost:4018/login',{
+            data : {
+                username : 'x',
+                password : 'y'
+            }
+        }).then( res => {
+            console.log( res ,'res' );
         }).catch(err =>{
-            console.log(err);
+            console.log( err );
         })
-        
-        // console.log( request.defaults );
+
+    
+
+
     }
 }
 </script>
