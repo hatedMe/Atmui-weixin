@@ -14,7 +14,7 @@
 
 
 <script>
-import inputItem from '../../components/Form/inputItem';
+import inputItem from '@/components/Form/inputItem';
 export default {
     components: {
         inputItem,

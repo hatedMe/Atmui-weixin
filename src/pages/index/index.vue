@@ -58,15 +58,13 @@
 <script>
 import List from "@/components/List/List.vue";
 import ListItem from "@/components/List/ListItem.vue";
-
 import Icon from '@/components/Icon/Icon.vue';
-import Button from '@/components/Button/Button.vue';
+
 import wxRequest from '../../request/index.js';
 
 export default {
     components: {
         Icon,
-        Button,
         List,
         ListItem
     },

@@ -1,7 +1,6 @@
 <template>
     <a :class=" 'button ' + type + ( long ? ' block' : '') + ( outline ? ' outline' : '' ) " @click="handleClick" >
-        <Icon v-if="licon" :class="licon" />
-        <!-- <span v-if="isShowSpan">{{text}}</span> -->
+        <Icon v-if="licon" :type="iconType" />
         <span><slot></slot></span>
     </a>
 </template>
@@ -12,7 +11,12 @@
         components: {
           Icon,  
         },
-        name: 'Button',
+        name: 'Buttons',
+        computed: {
+            iconType() {
+                return this.licon === '' && typeof this.licon !== 'undefined' ? 'icon-enter' : this.licon
+            }
+        },
         props:{
             type:{
                 type: String,
@@ -28,7 +32,7 @@
             },
             licon:{
                 type:String,
-                default:''
+                // default:''
             },
             outline:{
                 type:Boolean,

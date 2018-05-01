@@ -1,57 +1,57 @@
 
 
 <template>
-<div class="wingpadding-xl buttonMain">
+<div class="wingpadding-xl ButtonsMain">
     <p>基础演示</p>
-    <Button>按钮</Button>
-    <Button type="primary">primary</Button>
-    <Button type="success">success</Button>
-    <Button type="warn">warn</Button>
-    <Button type="submit">submit</Button>
-    <Button type="info">info</Button>
-    <Button type="cancel">cancel</Button>
+    <Buttons>按钮</Buttons>
+    <Buttons type="primary">primary</Buttons>
+    <Buttons type="success">success</Buttons>
+    <Buttons type="warn">warn</Buttons>
+    <Buttons type="submit">submit</Buttons>
+    <Buttons type="info">info</Buttons>
+    <Buttons type="cancel">cancel</Buttons>
     <p>块级按钮</p>
-    <Button type="primary" long>primary</Button>
-    <Button type="success" long>success</Button>
-    <Button type="warn" long>warn</Button>
-    <Button type="submit" long>submit</Button>
-    <Button type="info" long>info</Button>
-    <Button type="cancel" long>cancel</Button>
-<!--
+    <Buttons type="primary" long>primary</Buttons>
+    <Buttons type="success" long>success</Buttons>
+    <Buttons type="warn" long>warn</Buttons>
+    <Buttons type="submit" long>submit</Buttons>
+    <Buttons type="info" long>info</Buttons>
+    <Buttons type="cancel" long>cancel</Buttons>
+
     <p>带图标</p>
     
-    <Button type="primary" licon="icon-homepage">primary</Button>
-    <Button type="success" licon="icon-like"> success </Button>
-    <Button type="warn" licon="icon-setup"> warn </Button>
-    <Button type="submit" licon="icon-collection">submit</Button>
-    <Button type="info" liocn="icon-prompt">info</Button>
-    <Button type="cancel" licon="icon-delete">cancel</Button>
--->
-    <p>线框按钮</p>
+    <Buttons type="primary" licon="icon-homepage">primary</Buttons>
+    <Buttons type="success" licon="icon-like"> success </Buttons>
+    <Buttons type="warn" licon="icon-setup"> warn </Buttons>
+    <Buttons type="submit" licon="icon-collection">submit</Buttons>
+    <Buttons type="info" liocn="icon-prompt">info</Buttons>
+    <Buttons type="cancel" licon="icon-delete">cancel</Buttons>
 
-    <Button type="primary" outline>primary</Button>
-    <Button type="success" outline>success</Button>
-    <Button type="warn" outline>warn</Button>
-    <Button type="submit" outline>submit</Button>
-    <Button type="info" outline>info</Button>
-    <Button type="cancel" outline>cancel</Button>
+    <!-- <p>线框按钮</p>
+
+    <Buttons type="primary" outline>primary</Buttons>
+    <Buttons type="success" outline>success</Buttons>
+    <Buttons type="warn" outline>warn</Buttons>
+    <Buttons type="submit" outline>submit</Buttons>
+    <Buttons type="info" outline>info</Buttons>
+    <Buttons type="cancel" outline>cancel</Buttons> -->
 </div>
 </template>
 
 
 <script>
-import Button from '@/components/Button/button';
+import Buttons from '@/components/Button/Buttons';
 
 export default {
     components: {
-        Button,
+        Buttons,
     }
 }
 </script>
 
 
 <style lang="less">
-.buttonMain {
+.ButtonsMain {
     padding: 10px;
     p {
         margin-bottom: 10px;
