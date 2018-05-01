@@ -61,7 +61,7 @@ import ListItem from "@/components/List/ListItem.vue";
 
 import Icon from '@/components/Icon/Icon.vue';
 import Button from '@/components/Button/Button.vue';
-import wxRequest from 'wechat-request';
+import wxRequest from '../../request/index.js';
 
 export default {
     components: {
@@ -86,8 +86,11 @@ export default {
     mounted() {
 
 
-        wxRequest.defaults.timeout = 1500;
-        wxRequest.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+        // wxRequest.defaults.timeout = 1500;
+        //wxRequest.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+        // wxRequest.defaults.headers.common['Authorization'] = 'afgsdgfjhfgj4564654';
+
+       // wxRequest.defaults.headers.token = 'Authorization';
 
         wxRequest.post('http://localhost:4018/login',{
             data : {
