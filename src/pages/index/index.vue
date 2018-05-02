@@ -23,9 +23,10 @@
                 <ListItem licon="icon-send" subtitle="8">Input表单组件</ListItem>
                 <ListItem href="/switch" licon="icon-send" subtitle="多样化">Switch组件</ListItem> -->
 
-                <!-- <ListItem href="/swipeout" licon="icon-flip">滑动删除</ListItem>
-                <ListItem href="/map" licon="icon-coordinates">腾讯地图</ListItem> -->
+                <!-- <ListItem href="/swipeout" licon="icon-flip">滑动删除</ListItem> -->
+                <ListItem href="/pages/map/main" licon="icon-message">腾讯地图</ListItem>
                 <ListItem href="/pages/form/main" subtitle="可定制" licon="icon-message">Form组件系列</ListItem>
+                
                 <!-- <ListItem href="/search" licon="icon-search">SearchBar搜索栏</ListItem>
                 <ListItem href="/searchhistory" licon="icon-search">Search搜索历史列表</ListItem>
                 <ListItem href="/upload" licon="icon-picture">Upload文件上传</ListItem>
