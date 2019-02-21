@@ -30,6 +30,7 @@ export const dispatchRequest = function (config) {
                 method : config.method,
                 dataType : config.dataType,
                 success : function (res) {
+                    console.log( res , '================>' );
                     resolve({
                         data : res.data ,
                         headers : res.header,

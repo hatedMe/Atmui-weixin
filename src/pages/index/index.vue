@@ -23,9 +23,10 @@
                 <ListItem licon="icon-send" subtitle="8">Input表单组件</ListItem>
                 <ListItem href="/switch" licon="icon-send" subtitle="多样化">Switch组件</ListItem> -->
 
-                <!-- <ListItem href="/swipeout" licon="icon-flip">滑动删除</ListItem>
-                <ListItem href="/map" licon="icon-coordinates">腾讯地图</ListItem> -->
+                <!-- <ListItem href="/swipeout" licon="icon-flip">滑动删除</ListItem> -->
+                <ListItem href="/pages/map/main" licon="icon-message">腾讯地图</ListItem>
                 <ListItem href="/pages/form/main" subtitle="可定制" licon="icon-message">Form组件系列</ListItem>
+                
                 <!-- <ListItem href="/search" licon="icon-search">SearchBar搜索栏</ListItem>
                 <ListItem href="/searchhistory" licon="icon-search">Search搜索历史列表</ListItem>
                 <ListItem href="/upload" licon="icon-picture">Upload文件上传</ListItem>
@@ -60,7 +61,8 @@ import List from "@/components/List/List.vue";
 import ListItem from "@/components/List/ListItem.vue";
 import Icon from '@/components/Icon/Icon.vue';
 
-import wxRequest from '../../request/index.js';
+// import wxRequest from '../../request/index.js';
+import Request from 'wechat-request'
 
 export default {
     components: {
@@ -83,24 +85,32 @@ export default {
     },
     mounted() {
 
-
+        console.log( Request )
         // wxRequest.defaults.timeout = 1500;
         //wxRequest.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
         // wxRequest.defaults.headers.common['Authorization'] = 'afgsdgfjhfgj4564654';
 
        // wxRequest.defaults.headers.token = 'Authorization';
 
-        wxRequest.post('http://localhost:4018/login',{
-            data : {
-                username : 'x',
-                password : 'y'
-            }
-        }).then( res => {
+        // wxRequest.post('http://localhost:4018/login',{
+        //     data : {
+        //         username : 'x',
+        //         password : 'y'
+        //     }
+        // }).then( res => {
+        //     console.log( res ,'res' );
+        // }).catch(err =>{
+        //     console.log( err );
+        // })
+        // https://api.github.com/
+
+
+        return  ;
+        wxRequest.get('https://api.github.com/').then( res => {
             console.log( res ,'res' );
         }).catch(err =>{
             console.log( err );
         })
-
     
 
 

@@ -19,7 +19,7 @@ export default {
       'pages/logs/main', '^pages/index/main'
     ],
     window: {
-      backgroundTextStyle: 'center',
+      backgroundTextStyle: 'dark',
       navigationBarBackgroundColor: '#00c694',
       navigationBarTitleText: '小小二师兄',
       navigationBarTextStyle: 'white'

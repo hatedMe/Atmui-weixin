@@ -27,14 +27,14 @@
     <Buttons type="info" liocn="icon-prompt">info</Buttons>
     <Buttons type="cancel" licon="icon-delete">cancel</Buttons>
 
-    <!-- <p>线框按钮</p>
+    <p>线框按钮</p>
 
     <Buttons type="primary" outline>primary</Buttons>
     <Buttons type="success" outline>success</Buttons>
     <Buttons type="warn" outline>warn</Buttons>
     <Buttons type="submit" outline>submit</Buttons>
     <Buttons type="info" outline>info</Buttons>
-    <Buttons type="cancel" outline>cancel</Buttons> -->
+    <Buttons type="cancel" outline>cancel</Buttons>
 </div>
 </template>
 
